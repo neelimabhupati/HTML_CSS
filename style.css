@@ -1,0 +1,748 @@
+/* raleway-regular - latin */
+
+/* 700,
+bold */
+
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/raleway-v37-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-700 - latin */
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/raleway-v37-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* economica-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Economica';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/economica-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* economica-700 - latin */
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Economica';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/economica-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.Sakura_Rahmen {
+
+    position: relative;
+    height: 100vh;
+
+    background-image: url(./Images/Sakura_1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+
+    flex-direction: column;
+    gap: 120px;
+
+}
+
+
+.header {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0px max(120px, calc(50% - 720px));
+    padding: 0px 160px;
+    gap: 24px;
+    align-items: end;
+    justify-content: space-between;
+    /* border: 1px; */
+}
+
+.header img {
+
+    width: 64px;
+    height: 64px;
+}
+
+.header a {
+    line-height: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Raleway';
+
+}
+
+.nav-links {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-style: regular;
+    size: 24px;
+    gap: 48px;
+
+    font-family: 'Raleway';
+
+}
+
+
+.nav-links>a {
+
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Raleway';
+}
+
+.nav-links>a:hover {
+
+    background-color: rgb(41, 58, 81);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.Healines {
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 96px;
+
+}
+
+.Healines .nav-links img {
+    width: 24px;
+    height: 24px;
+
+
+}
+
+.phone-btn {
+
+    background-color: rgba(159, 9, 8, 1);
+    border-radius: 10px;
+    border: 1px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 16px 10px 16px;
+
+
+    justify-content: center;
+    gap: 8px;
+
+    text-decoration: none;
+
+}
+
+.phone-btn img {
+
+    width: 18px;
+    height: 18px;
+}
+
+.Healines>h1 {
+    font-weight: 700;
+    font-size: 96px;
+    font-family: 'Raleway';
+}
+
+
+.Healines>p {
+
+    color: white;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    text-align: center;
+
+}
+
+.Order_details {
+
+    background-color: white;
+    padding: 120px 160px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+}
+
+.Order_details>h2 {
+
+    color: rgba(159, 9, 8, 1);
+
+    font-weight: 700;
+    font-size: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_group_of_order_items {
+    gap: 64px;
+    /* padding: 120px 160px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.group_of_order_items {
+    /* padding: 64px 0px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.group_of_order_items>img {
+
+    width: 128px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.group_of_order_items>h3 {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Economica', sans-serif;
+    line-height: 100%;
+    text-align: center;
+}
+
+.meals {
+    padding: 120px 160px 56px 160px;
+    background-image: url(./Images/background-cream.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.meals h3 {
+    font-size: 80px;
+    color: rgba(159, 9, 8, 1);
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.meals img {
+    width: 352px;
+    height: 352px;
+}
+
+.td1 {
+    width: 350px;
+    height: 45px;
+}
+
+.r1-table {
+    display: flex;
+    font-family: "Raleway";
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 56px;
+    gap: 80px;
+}
+
+.r2-table {
+    display: flex;
+    font-family: "Raleway";
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 56px;
+    gap: 80px;
+}
+
+.r3-table {
+    display: flex;
+    font-family: "Raleway";
+    justify-content: left;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Table Text Styling */
+.r1-table p,
+.r2-table p,
+.r3-table p {
+    font-size: 56px;
+    font-family: 'Economica', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+table td {
+    color: rgba(103, 94, 84, 1);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.Navi_Angaben {
+
+    padding: 120px 0px 64px 0px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Adress-row {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    gap: 10px;
+}
+
+.Navi_Angaben>h3 {
+    gap: 8px;
+    font-size: 80px;
+    color: rgba(159, 9, 8, 1);
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.Navi_Angaben>p {
+
+    width: 20px;
+    height: 28px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navi_Angaben img {
+
+    width: 20px;
+    height: 28px;
+
+}
+
+.Adress-row {
+    display: flex;
+
+
+    gap: 12px;
+    width: 100%;
+
+    justify-content: center;
+}
+
+.Adress-row>img {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Map img {
+
+    width: 100%;
+
+}
+
+.Footer {
+
+    background-color: rgba(10, 20, 30, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-right: 159px;
+    padding-bottom: 48px;
+    padding-left: 159px;
+    height: 44px;
+
+    width: 100%;
+}
+
+.Footer h4 {
+
+    color: white;
+
+}
+
+
+.Footer_right {
+
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    gap: 24px;
+}
+
+
+.Footer_left {
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.Footer_left p {
+
+    font-size: 22px;
+    font-weight: 700;
+    width: 241px;
+    height: 22px;
+
+
+    color: white;
+
+}
+
+
+/* Sakura Rahmen Responsive */
+
+
+@media screen and (min-width: 1081px) and (max-width: 1260px) {}
+
+/* @media screen and (min-width: 875px) and (max-width: 1049px) {
+
+}
+
+    /* width: 320;
+    height: 65;
+    gap: 72px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px; */
+
+
+
+@media screen and (min-width: 876px) and (max-width: 1077px) {
+
+    .header {
+
+        padding: 12px 16px;
+        gap: 72px;
+
+    }
+
+    .phone-btn {
+        font-size: 14px;
+        /* white-space: nowrap; */
+
+    }
+
+    .Healines h1 {
+        font-size: 66px;
+    }
+
+    .Healines>p {
+        font-size: 19px;
+    }
+
+    .Order_details {
+        gap: 48px;
+        padding: 60px 80px;
+
+    }
+
+    .Order_details>h2 {
+
+        font-size: 60px;
+    }
+
+    .container_group_of_order_items {
+        gap: 24px;
+    }
+
+    .group_of_order_items>h3 {
+        font-size: 40px;
+    }
+
+    .group_of_order_items>img {
+        width: 108px;
+        height: 100px;
+    }
+
+    .meals {
+        padding: 60px 48px;
+        font-size: 60px;
+    }
+
+    .meals h3 {
+        font-size: 60px;
+    }
+
+    .r1-table p,
+    .r2-table p,
+    .r3-table p {
+        font-size: 40px;
+    }
+
+    table td {
+
+        font-size: 22px;
+    }
+
+    .r1-table,
+    .r2-table {
+        padding-bottom: 0px;
+
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 875px) {
+
+        .nav-links a:not(.phone-btn) {
+            display: none;
+        }
+
+        .Healines {
+            gap: 8px;
+        }
+
+        .Healines h1 {
+            font-size: 36px;
+        }
+
+        .Healines>p {
+            font-size: 16px;
+        }
+
+        .Order_details {
+
+            padding: 72px 16px;
+
+        }
+
+        .Order_details>h2 {
+            font-size: 36px;
+        }
+
+        .group_of_order_items {
+            padding: 0px;
+        }
+
+        .group_of_order_items>img {
+
+            width: 112px;
+            height: 112px;
+
+        }
+
+
+        .container_group_of_order_items {
+            gap: 32px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .group_of_order_items>h3 {
+            font-size: 24px;
+
+        }
+
+        .meals img {
+            width: 244px;
+            height: 244px;
+        }
+
+        .meals {
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+
+            padding: 72px 16px 72px 16px;
+        }
+
+        .r1-table p,
+        .r2-table p,
+        .r3-table p {
+            font-size: 32px;
+            gap: 16px;
+            /* margin-bottom: 16px; */
+        }
+
+        table td {
+
+            font-size: 20px;
+        }
+
+        .r1-table td,
+        .r2-table td,
+        .r3-table td {
+
+            padding-bottom: 8px;
+        }
+
+        .meals h3 {
+            font-size: 36px;
+
+        }
+
+        .r1-table,
+        .r3-table {
+
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .r2-table {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 24px;
+        }
+
+
+        .meals img {
+            width: 244px;
+            height: 244px;
+        }
+
+        .Navi_Angaben>h3 {
+            font-size: 42px;
+            gap: 16px;
+        }
+
+        .Adress-row {
+
+            font-size: 16px;
+        }
+
+        /* .Map img {
+
+            width: 320px;
+            height: 438px;
+
+        } */
+
+        .Footer_left>p {
+
+            display: none;
+        }
+
+        .Footer_left>img {
+
+            padding-left: 16px;
+        }
+
+        ;
+
+        .Footer_right>img {
+
+            padding-left: 16px;
+        }
+
+        /* width: 320;
+    height: 86;
+    min-width: 320px;
+    max-width: 430px;
+    top: 3436px;
+    justify-content: space-between;
+ 
+    padding-top: 23px;
+    padding-right: 18px;
+    padding-bottom: 23px;
+    padding-left: 16px; */
+
+
+    }
+
+    /* @media screen and (min-width:1440px) {
+
+    .header {
+        padding: 16px max(120px, calc(50% - 720px));
+    }
+
+    .footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+} */}
