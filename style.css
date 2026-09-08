@@ -1,0 +1,563 @@
+/* arima-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./Fonts/arima-v7-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arima-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Fonts/arima-v7-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* palanquin-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./Fonts/palanquin-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Fonts/palanquin-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+* {
+    margin: 0;
+    /* to remove Browser default margin  */
+    padding: 0;
+    /* to remove Browser default padding  */
+    box-sizing: border-box;
+    /* Width/Height calculation consistent */
+}
+
+/*====================== Page_Wrapper ==============================*/
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* 2. లోపలి Content 1200px లో సెంటర్ అవ్వడానికి */
+.Page_Wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Small screens లో content edge కి అంటుకోకుండా స్పేస్ ఇస్తుంది */
+}
+
+/*====================== Variable ==============================*/
+:root {
+    --max-width: 1200px;
+    --content-max-width: 1200px;
+    --primary-color: #333;
+    --font-family: 'Inter', sans-serif;
+}
+
+/*====================== Header_Style ==============================*/
+
+.Header {
+
+    width: 100%;
+    height: 128px;
+    background-color: rgba(78, 164, 135, 1);
+    display: flex;
+    justify-content: center;
+
+}
+
+.Header_details {
+
+
+    width: 100%;
+    max-width: var(--max-width);
+    /* 1200px కంటే పెరగదు */
+    margin: 0 auto;
+    /* స్క్రీన్ పెద్దదైనా సెంటర్‌లో ఉంటుంది */
+    padding: 0 20px;
+
+
+    display: flex;
+    gap: 102px;
+    align-items: center;
+
+
+}
+
+.Header_details>p:hover {
+
+    box-shadow: 0 0 16px rgba(255, 255, 220, 0.8),
+                0 0 32px rgba(255, 255, 180, 0.4);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+   
+}
+
+
+
+.Header_details>img {
+    width: 72px;
+    height: 72px;
+}
+
+.Header_details>p {
+
+    color: aliceblue;
+    font-family: Arima;
+    font-weight: 700;
+    font-size: 24px;
+    gap: 72px;
+    line-height: 80%;
+
+}
+
+/*====================== Blog_allcontent ==============================*/
+.Blog_content1 {
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*====================== Main_Content ==============================*/
+
+.Main_Content {
+
+    width: 902px;
+    height: 380px;
+    gap: 8px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+
+
+}
+
+.Main_Content>h1 {
+
+    padding-top: 8px;
+    font-family: Arima;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 54px;
+    line-height: 120%;
+    color: rgba(241, 201, 83, 1);
+
+}
+
+.Main_Content>h2 {
+
+
+    font-family: Palanquin;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 120%;
+    color: rgba(78, 164, 135, 1);
+
+}
+
+.Main_Content>h3 {
+
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+
+
+}
+
+
+.Meta_data {
+
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 32px;
+}
+
+
+.Meta_data p {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/*====================== Author_card ==============================*/
+
+.Author_card {
+
+    background-color: rgba(78, 164, 135, 0.2);
+    border-radius: 30px;
+    width: 272px;
+    height: 380px;
+    gap: 16px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Author_card>img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.Author_card>h1 {
+
+    font-family: Arima;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+
+}
+
+
+
+
+.Author_card>h2 {
+
+    font-family: Arima;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.Author_card>p {
+
+    font-family: Palanquin;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: left;
+}
+
+
+/*====================== Text_Style ==============================*/
+
+
+.Normal_text {
+    font-family: Palanquin;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    max-width: var(--max-width);
+
+    width: 100%;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+
+    margin-top: 40px;
+
+}
+
+/* List Formatting */
+.Blog_list {
+    padding-left: 50px;
+    /* Bullet points canonical indentation kosam */
+    list-style-type: disc;
+}
+
+.Blog_list li {
+    margin-bottom: 12px;
+    /* Points madhya spacing kosam */
+
+}
+
+
+.Video_Wrapper {
+
+    margin: 70px auto;
+    width: 931px;
+    height: 520px;
+    border-radius: 53px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+
+}
+
+
+.My_Video {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 53px;
+    background-color: #000;
+    border: none;
+
+}
+
+/*====================== Footer_Style ==============================*/
+
+.Footer {
+
+    /* max-width: var(--max-width); */
+
+    margin: 0 auto;
+    height: 128px;
+    background-color: rgba(78, 164, 135, 1);
+    /* padding-top: 12px;
+    padding-left: 146px; */
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    /* padding: 48px max(calc((100% - 1200px)/2), 88px); */
+
+}
+
+.Left_footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 72px;
+}
+
+.Left_footer>p {
+
+    color: aliceblue;
+    font-family: Palanquin;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.Right_footer {
+
+    gap: 16px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*====================== Protip_box ==============================*/
+.Protip_Container{
+
+    padding-top: 80px; ;
+}
+
+.Protip_box {
+    left: -50px;
+    top: -50px;
+    position: absolute;
+    
+    transform: rotate(-15deg);
+
+    background-color: rgba(78, 164, 135, 1);
+    width: 195px;
+    height: 66px;
+  
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.Protip_box>p {
+
+    color: rgba(241, 201, 83, 1);
+    font-family: Palanquin;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+
+}
+
+.Protip_Content {
+    position: relative;
+
+    width: 1083px;
+    max-width: 100%;
+    /* Responsive display kosam */
+    height: auto;
+    
+    /* Box ni screen center loki thestundi */
+    margin: 50px auto;
+
+    
+    padding: 40px 10px 20px 30px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    /* Padding height/width ni penchakunda kapadutundi */
+    /* padding-left: 50px; */
+}
+
+.Protip_Content li {
+
+    margin-bottom: 12px;
+}
+
+.no-line {
+    text-decoration: none;
+}
+
+a {
+    font-weight: 700;
+    color: green;
+    text-decoration: none;
+}
+/*====================== Share_the_Article ==============================*/
+
+.Share_the_Article {
+    width: 493px;
+    
+    gap: 48px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+
+}
+
+.Share_Container{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.Arrow{
+
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+}
+
+
+.Share_the_Article>p {
+
+    width: 463px;
+    height: 58px;
+    font-family: Arima;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    display: flex;
+
+    text-align: center;
+    margin: 0;
+
+}
+
+.Share_button {
+
+    background-color: rgba(78, 164, 135, 1);
+    width: 158px;
+    height: 48px;
+    border-radius: 40px;
+    gap: 8px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.Share_button>h2 {
+
+    color: rgba(241, 201, 83, 1);
+
+    font-family: Arima;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 5%;
+    margin: 0;
+
+}
+
+.Shareoption {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+
+}
