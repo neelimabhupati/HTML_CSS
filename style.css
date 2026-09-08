@@ -1,0 +1,533 @@
+/* raleway-regular - latin */ 
+
+/* 700,
+bold */
+
+
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/raleway-v37-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* raleway-700 - latin */
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/raleway-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* economica-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/economica-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* economica-700 - latin */
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/economica-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.Sakura_Rahmen {
+
+    position: relative;
+    height: 100vh;
+    
+    background-image: url(./Images/Sakura_1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+
+    flex-direction: column;
+    gap: 120px;
+
+}
+
+
+.header {
+
+    width: 100%;
+    height: 112px;
+    display: flex;
+    padding: 0px 160px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px;
+}
+
+.header img {
+
+    width: 64px;
+    height: 64px;
+}
+
+.header a {
+    line-height: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    
+    font-family: 'Raleway';
+ 
+}
+
+.nav-links {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-style: regular;
+    size: 24px;
+    gap: 48px;
+
+    font-family: 'Raleway';
+
+    /* display: flex;
+    align-items: center;
+    gap: 48px; */
+}
+
+
+.nav-links>a {
+    /* color: white;
+    text-decoration: none;
+    font-size: 1.5rem; */
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Raleway';
+}
+
+.Healines {
+    /* position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    top: 260px;
+    left: 800px;
+    text-align: center;
+
+    justify-content: space-between; */
+
+   
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 96px;
+
+}
+
+.Healines 
+
+.nav-links img {
+    width: 24px;
+    height: 24px;
+
+
+}
+
+.phone-btn {
+
+    background-color: rgba(159, 9, 8, 1);
+    border-radius: 10px;
+    border: 1px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 16px 10px 16px;
+    
+    
+    justify-content: center;
+    gap: 8px;
+
+    text-decoration: none;
+
+}
+
+.phone-btn img{
+
+    width: 18px;
+    height: 18px;
+}
+
+.Healines>h1 {
+    font-weight: 700;
+    font-size: 96px;
+    font-family: 'Raleway';
+}
+
+
+.Healines>p {
+
+    color: white;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    text-align: center;
+
+}
+
+.Order_details {
+
+    background-color: white;
+    padding:  120px 160px ;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.Order_details >h2 {
+
+    color: rgba(159, 9, 8, 1);
+   
+    font-weight: 700;
+    font-size: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_group_of_order_items
+{
+    gap: 64px;
+    padding: 120px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.group_of_order_items{
+    padding: 64px 0px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;   
+  
+    justify-content: space-between;
+
+}
+
+.group_of_order_items >img{
+    
+    width: 128px;
+    height: 120px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.group_of_order_items > h3{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Economica', sans-serif;
+    line-height: 100%;
+    text-align: center;
+}
+
+.Menu_Details{
+
+    padding: 120px 160px;
+    gap: 120px;
+    background-image: url(./Images/background-cream.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%vh;
+    
+}
+
+.Menu_Details h2{
+
+    font-size: 80px;
+    color: rgba(159, 9, 8, 1);
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.Tonkasu_Ramen{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 80px;
+
+    padding: 24px;
+
+}
+
+.Tonkasu_Ramen img{
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 352;
+    height: 352;
+}
+
+.Spicy{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 80px;
+
+    padding: 24px;
+
+}
+
+.Spicy img{
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 352;
+    height: 352;
+}
+
+
+.Shio{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 80px;
+
+    padding: 24px;
+
+}
+
+.Shio img{
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 352;
+    height: 352;
+}
+
+
+.menu-list > h3{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 56px;
+    font-family: 'Economica';
+    font-weight: 700;
+    line-height: 100%;
+
+}
+
+.menu-list  p{
+
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: rgba(103, 94, 84, 1);
+    font-size: 32px;
+    font-weight: bold; 
+
+}
+
+.Menu_Details{
+
+    padding-bottom: 56px;
+    gap: 64px;
+}
+
+.Navi_Angaben {
+
+    padding: 120px 0px 64px 0px;
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Adress-row {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    gap: 10px;
+}
+
+.Navi_Angaben> h3{
+    gap: 8px;
+    font-size: 80px;
+    color: rgba(159, 9, 8, 1);
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.Navi_Angaben > p{
+
+    width: 20px;
+    height: 28px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navi_Angaben img{
+
+    width: 20px;
+    height: 28px;
+
+}
+
+.Adress-row{
+    display: flex;
+    
+    
+    gap: 12px;
+    width: 100%;
+
+    justify-content: center;
+}
+
+.Adress-row > img{
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.Map img{
+
+    width: 100%;
+    
+}
+
+.Footer{
+
+    background-color: rgba(10, 20, 30, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-right: 159px;
+    padding-bottom: 48px;
+    padding-left: 159px;
+    height: 44px;
+
+    width: 100%;
+}
+
+.Footer h4{
+
+    color: white;
+
+}
+
+
+.Footer_right{
+
+    display: flex;
+    align-items:center;
+    width: 44px;
+    height: 44px;
+
+    gap: 24px;
+}
+
+
+.Footer_left{
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.Footer_left p{
+
+    font-size: 22px;
+    font-weight: 700;
+    width: 241px;
+    height:22px;
+   
+
+    color: white;
+
+}
